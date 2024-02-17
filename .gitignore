@@ -1,0 +1,5 @@
+/target
+/src/db/prisma.rs
+/prisma-cli/target
+
+/.idea

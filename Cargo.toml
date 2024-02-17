@@ -1,0 +1,18 @@
+[package]
+name = "location-scraper"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+resolver = "2"
+members = [
+    "prisma-cli"
+]
+
+[dependencies]
+reqwest = { version = "0.11.24", features = ["json"] }
+tokio = { version = "1.36.0", features = ["full"] }
+scraper = { version = "0.18.1" }
+chrono = { version = "0.4.34" }
+prisma-client-rust = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.11" }
+serde = "1.0.196"
